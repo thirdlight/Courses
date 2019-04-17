@@ -2,6 +2,28 @@
 This homework updates the code found here: (https://coursetro.com/posts/code/102/Solidity-Mappings-&-Structs-Tutorial) to Solidity 5.0.
 It also includes some automatic tests as well, for extra credit.
 
+
+# Getting Started
+
+###   Dependencies:
+* Solidity 5.0 
+* Truffle v5.0.8
+* Node v10.15.0
+
+### Installation
+Download the `Hello World` folder onto your machine locally and enter the folder through the command line. Then, run `truffle test` for the extra credit tests. Or, if you wish to test the code manually, then run:
+* `truffle develop`
+* `migrate --reset`
+* `Courses.deployed().then(c => {course = c;})`
+* `web3.eth.getAccounts().then(function(result){account1=result[1];})`
+* `web3.eth.getAccounts().then(function(result){account0=result[0];})`
+* `course.setInstructor(account0, 22, "Jane", "Doe")`
+* `course.setInstructor(account1, 37, "John", "Public")`
+* `course.getInstructors()`
+* `course.countInstructors()`
+* `course.getInstructor(account0)`
+* `course.getInstructor(account1)`
+
 ### Output
 
 For the Extra Credit tests portion:
